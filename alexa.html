@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for my beautiful girl, niña</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            color: #fff;
+            margin: 20px;
+            overflow: hidden;
+            position: relative;
+            background: #0d1117;
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            color: #ff63fa; /* Change to the desired color */
+            margin-bottom: 10px;
+        }
+
+        .info-box {
+            background-color: #292929;
+            border: 2px solid #ff63fa; /* Change to the desired color */
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .info-text {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .months-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .month-item {
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid #ff63fa; /* Change to the desired color */
+            border-radius: 10px;
+            background-color: #292929;
+            position: relative;
+        }
+
+        .month-item a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            position: relative;
+            display: inline-block;
+        }
+
+        .month-item a::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background: radial-gradient(circle at 20% 50%, #fff, transparent 60%);
+            border-radius: 10px;
+            display: none; /* Initially hidden */
+        }
+
+        .message-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #292929;
+            border: 2px solid #ff63fa; /* Change to the desired color */
+            border-radius: 10px;
+            padding: 10px;
+            max-width: 80%;
+            color: #fff;
+            z-index: 999;
+        }
+
+        .yes-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: #4CAF50; /* Green */
+            border: none;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .yes-button:hover {
+            background-color: #45a049;
+        }
+
+        .star-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .star {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: fall 5s infinite linear, shine 1s infinite alternate;
+        }
+
+        @keyframes fall {
+            0% {
+                opacity: 0.8;
+                transform: translateY(-100vh) rotate(0deg);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(100vh) rotate(720deg);
+            }
+        }
+
+        @keyframes shine {
+            0%, 100% {
+                box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+            }
+            50% {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>hi niña >^_^<</h1>
+
+    <div class="info-box">
+        <p class="info-text">we've been together for...</p>
+        <p class="info-text">234 days, 3 hours, 21 minutes, and 8 seconds</p>
+    </div>
+
+    <ul class="months-list">
+        <li class="month-item">
+            <a href="#" onclick="toggleMessage('message-june')">
+                june 2023
+                <div id="message-june" class="message-popup">
+                    <p>
+                        This month, you and I had our first interaction 
+                        through a cute invitation to play CODM. Throughout 
+                        the month, our relationship didn't progress much, as 
+                        I could sense that both of us were testing the waters. 
+                        However, there was a playful undertone in our conversations, 
+                        with hints of teasing and joking between us.
+                        <br><br>
+                        Since we started talking toward the end of the month, 
+                        we frequently found ourselves asking about each other's daily 
+                        lives. This included the numerous times we played 
+                        CODM together. Despite the cautious approach we took, 
+                        there was an unspoken connection building through our 
+                        shared interests and the lighthearted banter we exchanged.
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li class="month-item">
+            <a href="#" onclick="toggleMessage('message-july')">
+                july 2023
+                <div id="message-july" class="message-popup">
+                    <p>
+                        In this month, there haven't been too many 
+                        conflicts because, again, we're still testing 
+                        the waters. During this time, there came a point 
+                        where it seemed like we stopped talking because you
+                        mentioned that there's a part of you that's not yet 
+                        ready or is still confused about certain things.
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li class="month-item">
+            <a href="#" onclick="toggleMessage('message-august')">
+                august 2023
+                <div id="message-august" class="message-popup">
+                    <p>
+                        This month, I admit that I was also confused 
+                        about my feelings. I was afraid of falling for you 
+                        during this time, but I also confessed to you that
+                        I have a clear intentions toward you. I can say that 
+                        this month is extra special for us, especially for me.
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li class="month-item">
+            <a href="#" onclick="toggleMessage('message-september')">
+                september 2023
+                <div id="message-september" class="message-popup">
+                    <p>
+                        When I recall this month, it makes me laugh at the way 
+                        I confessed to you. Especially since it's your birthday 
+                        month, this is also the month when I asked if I could 
+                        court you. Sadly, I remember that during this month, 
+                        you had a serious breakdown because you suddenly got sick. 
+                        I love you always, baby !!!
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li class="month-item">
+            <a href="#" onclick="toggleMessage('message-october')">
+                october 2023
+                <div id="message-october" class="message-popup">
+                    <p>
+                        This is where my baby's devilish side begins, 
+                        and your childish tantrums become more frequent. 
+                        I love your childish side, my love. Don't ever change, 
+                        I can endure staying with that attitude of yours.
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li class="month-item">
+            <a href="#" onclick="toggleMessage('message-november')">
+                november 2023
+                <div id="message-november" class="message-popup">
+                    <p>
+                        This might be the most painful month for me regarding 
+                        our relationship, but I learned a lot this month. 
+                        I just kept understanding you more and learning how to love 
+                        you even more. Thank you for staying, my love.
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li class="month-item">
+            <a href="#" onclick="toggleMessage('message-december-2023')">
+                december 2023
+                <div id="message-december-2023" class="message-popup">
+                    <p>
+                        Like other lovers, our fights became more frequent 
+                        each month. But again, nothing changed in my feelings 
+                        for you. You are still the one I choose for
+                        the future. I celebrated my Christmas last year with you, 
+                        and hopefully, there will be more years to come 
+                        celebrating Christmas together.
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li class="month-item">
+            <a href="#" onclick="toggleMessage('message-january-2024')">
+                january 2024
+                <div id="message-january-2024" class="message-popup">
+                    <p>
+                        We welcomed the new year together, 
+                        but similar to what happened in November, 
+                        it repeated this month. I thought there was 
+                        no hope for us to return to how we were. 
+                        It's beautiful to think that we still went home 
+                        to each other, and I appreciate you always for choosing me, 
+                        baby.
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li class="month-item">
+            <a href="#" onclick="toggleMessage('message-february-2024')">
+                february 2024
+                <div id="message-february-2024" class="message-popup">
+                    <p>
+                        I love you. I'm asking for permission if you 
+                        can be my date this Valentine's Day. Sadly, 
+                        we're far from each other, but I have ways to 
+                        celebrate it with you. 
+                        So, I'm asking you right now if I can date you 
+                        this Valentine's Day?
+                    </p>
+                    <button class="yes-button" onclick="window.location.href=
+                    'https://open.spotify.com/track/4oZKyVTuQwKAXlplVagooE?si=9fae2375f7c1430b';"
+                    >Yes</button>
+                </div>
+            </a>
+        </li>
+        <!-- Add similar blocks for other months -->
+    </ul>
+
+    <div class="star-container">
+        <script>
+            const starContainer = document.querySelector('.star-container');
+
+            function createStar() {
+                const star = document.createElement('div');
+                star.classList.add('star');
+                star.style.left = `${Math.random() * 100}vw`;
+                star.style.top = `${Math.random() * 100}vh`;
+                starContainer.appendChild(star);
+            }
+
+            const starInterval = setInterval(createStar, 2000);
+
+            setTimeout(() => {
+                clearInterval(starInterval);
+            }, 10000);
+
+            function toggleMessage(id) {
+                const messagePopup = document.getElementById(id);
+                messagePopup.style.display = messagePopup.style.display === 'none' ? 'block' : 'none';
+            }
+        </script>
+    </div>
+</body>
+
+</html>
